@@ -1,0 +1,75 @@
+.header {
+  padding: 25px 0 230px;
+  background: rgb(243,129,129);
+  background-image: linear-gradient(to bottom, rgba(243,129,129,.9) 0%, rgba(252,227,138,.9) 100%), url("../img/Layer 15.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    &-logo {
+      color: #ffffff;
+      font-family: 'Montserrat';
+      font-weight: bold;
+      font-size: 30px;
+    }
+    &-menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-transform: uppercase;
+      width: 617px;
+      font-family: 'Montserrat';
+      font-weight: 400;
+      margin-top: 5px;
+      li a {
+        color: #ffffff;
+        padding-bottom: 5px;
+        border-bottom: 3px solid transparent;
+        font-size: 14px;
+        &:hover {
+          border-bottom-color: #fce38a;
+          color: #fce38a;
+        }
+      }
+    }
+  }
+  &__banner{
+    text-align: center;
+    color: #ffffff;
+    &-top-text {
+      font-size: 72px;
+      font-family: 'Kaushan Script';
+      margin-bottom: 27px;
+    }
+    &-main-text {
+      font-size: 150px;
+      font-family: 'Montserrat';
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 850px;
+      margin: auto;
+      margin-bottom: 110px;
+      line-height: 140px;
+    }
+    &-button {
+      width: 160px;
+      height: 40px;
+      background: transparent;
+      color: #ffffff;
+      font-size: 14px;
+      font-family: 'Montserrat';
+      font-weight: bold;
+      text-transform: uppercase;
+      border: 3px solid #ffffff;
+      cursor: pointer;
+      outline: none;
+      &:hover {
+        background: #ffffff;
+        color: #f9bd87;
+      }
+    }
+  }
+}

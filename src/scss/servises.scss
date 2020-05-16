@@ -1,0 +1,67 @@
+.services {
+  padding-top: 40px;
+  &__subtitle {
+    font-size: 24px;
+    color: #333333;
+    font-family: 'Kaushan Script';
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__title {
+    font-size: 30px;
+    color: #333333;
+    font-family: 'Montserrat';
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 100px;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 3px;
+      display: block;
+      background: $coral;
+      left: calc(50% - 30px);
+      bottom: -36px;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    &-item {
+      width: 33.3%;
+      box-sizing: border-box;
+      padding: 0 28px;
+      display: flex;
+      margin-bottom: 95px;
+      &:hover {
+        path {
+          fill: $coral;
+        }
+      }
+
+      &-icon {
+        flex-shrink: 0;
+        margin-right: 27px;
+
+      }
+      &-body {
+        &-title {
+          font-size: 14px;
+          text-transform: uppercase;
+          color: #333333;
+          font-family: 'Montserrat';
+          margin-bottom: 15px;
+        }
+        &-text {
+          font-size: 15px;
+          font-family: 'Roboto';
+          color: #9f9f9f;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}
